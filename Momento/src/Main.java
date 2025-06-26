@@ -3,8 +3,6 @@ import Document.History2;
 import Editor.Editor;
 import Editor.History;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         //Memento is a behavioral design pattern that lets you save and restore the previous state of an object without
