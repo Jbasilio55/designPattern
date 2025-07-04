@@ -2,6 +2,8 @@ import Canvas.Canvas;
 import Canvas.SelectionTool;
 import Canvas.BrushTool;
 import Canvas.EraserTool;
+import DirectionService.DirectionService;
+import DirectionService.Walking;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,6 +40,8 @@ public class Main {
 //        to use the state pattern. What are the benefits of the new
 //        implementation?
 
-        
+        var service = new DirectionService(new Walking());
+        service.getETA();
+        service.getDirections();
     }
 }

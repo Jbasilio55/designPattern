@@ -1,9 +1,7 @@
 package DirectionService;
 
-public enum TravelMode {
-    DRIVING,
-    BICYCLING,
-    TRANSIT,
-    WALKING
+public interface TravelMode {
+    Object getETA();
+    Object getDirections();
 }
 
