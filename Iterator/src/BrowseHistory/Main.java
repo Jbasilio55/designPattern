@@ -7,9 +7,11 @@ public class Main {
         history.push("b");
         history.push("c");
 
-        for(int i = 0; i < history.getUrls().size(); i++){
-            var url = history.getUrls().get(i);
+        Iterator iterator = history.createIterator();
+        while(iterator.hasNext()){
+            var url = iterator.current();
             System.out.println(url);
+            iterator.next();
         }
     }
 }
